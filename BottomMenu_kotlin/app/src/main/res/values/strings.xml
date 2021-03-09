@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BottomMenu_kotlin</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+</resources>

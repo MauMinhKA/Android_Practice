@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="content_Name"
+            type="com.example.bottommenu_kotlin.MainActivity" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#E91E63"
+            android:textSize="20sp"
+            android:text="@{content_Name.message}"/>
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/home"
+            android:textColor="#E91E63"
+            android:textSize="18sp" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:onClick="@{() -> content_Name.showMess()}"
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            app:elevation="2dp"
+            app:itemBackground="@android:color/white"
+            app:itemIconSize="24dp"
+            app:menu="@menu/menu_bottom" />
+    </RelativeLayout>
+</layout>

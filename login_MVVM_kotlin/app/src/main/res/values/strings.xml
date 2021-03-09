@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">login_MVVM_kotlin</string>
+    <string name="email">email</string>
+    <string name="login">login</string>
+    <string name="password" />
+    <string name="submit" />
+</resources>
