@@ -9,6 +9,8 @@ import com.example.mvvm_android_java.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private final int nameDemo = 13;
+    private final int nameDemo1 = 13;
+    private final int nameDemo2 = 13;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
