@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         })
         btn_submit.setOnClickListener(View.OnClickListener {
             clickAddUser()
+            Toast.makeText(this,"this is toast message", Toast.LENGTH_SHORT).show()
         })
     }
 
